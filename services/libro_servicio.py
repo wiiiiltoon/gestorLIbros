@@ -1,7 +1,7 @@
 from entities.Libro import Libro
-from list_entities.Libros import *
+import list_entities.Libros as Libros
 
-class_libros = Libros()
+class_libros = Libros.Libros()
 
 def get_libro_by_id(id_libro):
     return class_libros.get_libro_by_id(id_libro)

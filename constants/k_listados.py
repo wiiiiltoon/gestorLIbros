@@ -1,6 +1,6 @@
-from constants.k_endpoints import *
-from constants.k_atributos import *
+import constants.k_endpoints as k_endpoints
+import constants.k_atributos as k_atributos
 
-LISTADO_LIBRO_ATRIBUTOS = [LIBRO_ID, LIBRO_TITULO, LIBRO_AUTOR, LIBRO_FECHA_INICIO, LIBRO_FECHA_FIN, LIBRO_VALORACION, LIBRO_OPINION]
-LISTADO_LIBRO_ENDPOINTS = [CONSULTAR_LIBROS, AGREGAR_LIBRO, MODIFICAR_LIBRO, ELIMINAR_LIBRO, RANKING_LIBRO, FICHATECNICA_LIBRO]
+LISTADO_LIBRO_ATRIBUTOS = [k_atributos.LIBRO_ID, k_atributos.LIBRO_TITULO, k_atributos.LIBRO_AUTOR, k_atributos.LIBRO_FECHA_INICIO, k_atributos.LIBRO_FECHA_FIN, k_atributos.LIBRO_VALORACION, k_atributos.LIBRO_OPINION]
+LISTADO_LIBRO_ENDPOINTS = [k_atributos.CONSULTAR_LIBROS, k_atributos.AGREGAR_LIBRO, k_atributos.MODIFICAR_LIBRO, k_atributos.ELIMINAR_LIBRO, k_atributos.RANKING_LIBRO, k_atributos.FICHATECNICA_LIBRO]
     

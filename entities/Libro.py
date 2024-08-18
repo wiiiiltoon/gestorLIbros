@@ -1,6 +1,8 @@
-from constants.k_atributos import *
+import constants.k_atributos as k_atributos
 from utilities.utils import get_fecha_actual
 import uuid
+
+LIT_LIBRO = 'libro'
 
 class Libro:
 
@@ -67,11 +69,11 @@ class Libro:
     
     def build(self):
         return {
-            LIBRO_ID: str(self.id),
-            LIBRO_TITULO: self.titulo,
-            LIBRO_AUTOR: self.autor,
-            LIBRO_FECHA_INICIO: self.fecha_inic,
-            LIBRO_FECHA_FIN: self.fecha_fin,
-            LIBRO_VALORACION: self.opinion,
-            LIBRO_OPINION: self.valoracion
+            k_atributos.LIBRO_TITULO: self.titulo,
+            k_atributos.LIBRO_AUTOR: self.autor,
+            k_atributos.LIBRO_ID: str(self.id),
+            k_atributos.LIBRO_FECHA_INICIO: self.fecha_inic,
+            k_atributos.LIBRO_FECHA_FIN: self.fecha_fin,
+            k_atributos.LIBRO_VALORACION: self.opinion,
+            k_atributos.LIBRO_OPINION: self.valoracion
         }
