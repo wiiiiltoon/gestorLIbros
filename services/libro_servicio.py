@@ -1,5 +1,5 @@
-from Libro import Libro
-from Libros import *
+from entities.Libro import Libro
+from list_entities.Libros import *
 
 class_libros = Libros()
 

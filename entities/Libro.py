@@ -1,5 +1,5 @@
-from const_atributos import *
-from utils import get_fecha_actual
+from constants.k_atributos import *
+from utilities.utils import get_fecha_actual
 import uuid
 
 class Libro:

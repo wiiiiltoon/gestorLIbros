@@ -1,8 +1,0 @@
-MENU = '/'
-CONSULTAR_LIBROS = '/consultar'
-CONSULTAR_LIBRO_BY_ID = '/consultar/<id_libro>'
-AGREGAR_LIBRO = '/agregar'
-MODIFICAR_LIBRO = '/modificar/<id_libro>'
-ELIMINAR_LIBRO = '/eliminar/<id_libro>'
-RANKING_LIBRO = '/ranking'
-FICHATECNICA_LIBRO = '/ficha-tecnica/<id_libro>'

@@ -1,4 +1,4 @@
-import Libro
+import entidades.Libro as Libro
 from consts_listados import *
 
 class Libros:

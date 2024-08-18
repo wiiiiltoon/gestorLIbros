@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify, abort
-from const_endpoints import *
-from const_generales import *
-from Libro import *
-import libro_servicio
-from Libros import *
-import Libros
+from constants.k_endpoints import *
+from constants.k_generales import *
+from constants.k_listados import *
+from entities.Libro import *
+import services.libro_servicio as libro_servicio
+from list_entities.Libros import *
+import list_entities.Libros as Libros
 from urllib.parse import urljoin
 
 app = Flask(__name__)

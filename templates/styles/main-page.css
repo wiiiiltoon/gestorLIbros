@@ -1,0 +1,26 @@
+.caja-buscador {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 5em 20em 0 20em;
+}
+
+.item-buscador {
+    margin-inline: 10px;
+}
+
+.caja-acciones {
+    display: grid;
+    grid:repeat(2, 10em) / repeat(3, 10em);
+
+}
+
+.item {
+    border-style: solid;
+    width: 15em;
+    height: 15em;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 4em;
+}
