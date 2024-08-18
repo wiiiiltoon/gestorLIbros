@@ -1,4 +1,4 @@
-import constants.k_atributos as k_atributos
+import constants.k_atributes as k_atributes
 from utilities.utils import get_fecha_actual
 import uuid
 
@@ -6,74 +6,74 @@ LIT_LIBRO = 'libro'
 
 class Libro:
 
-    def __init__(self, titulo, autor):
+    def __init__(self, title, author):
         self._id = uuid.uuid4()
-        self._titulo = titulo
-        self._autor = autor
-        self._fecha_inic = get_fecha_actual()
-        self._fecha_fin = ''
+        self._title = title
+        self._author = author
+        self._date_inic = get_fecha_actual()
+        self._date_fin = ''
         self._opinion = ''
-        self._valoracion = ''
+        self._rating = ''
 
     @property
     def id(self):
         return self._id
 
     @property
-    def titulo(self):
-        return self._titulo
+    def title(self):
+        return self._title
 
     @property
-    def autor(self):
-        return self._autor
+    def author(self):
+        return self._author
 
     @property
-    def fecha_inic(self):
-        return self._fecha_inic
+    def date_inic(self):
+        return self._date_inic
 
     @property
-    def fecha_fin(self):
-        return self._fecha_fin
+    def date_fin(self):
+        return self._date_fin
 
     @property
     def opinion(self):
         return self._opinion
 
     @property
-    def valoracion(self):
-        return self._valoracion
+    def rating(self):
+        return self._rating
         
-    @titulo.setter
-    def titulo(self, titulo):
-        self._titulo = titulo
+    @title.setter
+    def title(self, title):
+        self._title = title
         
-    @autor.setter
-    def autor(self, autor):
-        self._autor = autor
+    @author.setter
+    def author(self, author):
+        self._author = author
         
-    @fecha_inic.setter
-    def fecha_inic(self, fecha_inic):
-        self._fecha_inic = fecha_inic
+    @date_inic.setter
+    def date_inic(self, date_inic):
+        self._date_inic = date_inic
         
-    @fecha_fin.setter
-    def fecha_fin(self, fecha_fin):
-        self._fecha_fin = fecha_fin
+    @date_fin.setter
+    def date_fin(self, date_fin):
+        self._date_fin = date_fin
         
     @opinion.setter
     def opinion(self, opinion):
         self._opinion = opinion
         
-    @valoracion.setter
-    def valoracion(self, valoracion):
-        self._valoracion = valoracion
+    @rating.setter
+    def rating(self, rating):
+        self._rating = rating
     
     def build(self):
         return {
-            k_atributos.LIBRO_TITULO: self.titulo,
-            k_atributos.LIBRO_AUTOR: self.autor,
-            k_atributos.LIBRO_ID: str(self.id),
-            k_atributos.LIBRO_FECHA_INICIO: self.fecha_inic,
-            k_atributos.LIBRO_FECHA_FIN: self.fecha_fin,
-            k_atributos.LIBRO_VALORACION: self.opinion,
-            k_atributos.LIBRO_OPINION: self.valoracion
+            k_atributes.LIBRO_ID: str(self.id),
+            k_atributes.LIBRO_TITULO: self.title,
+            k_atributes.LIBRO_AUTOR: self.author,
+            k_atributes.LIBRO_FECHA_INICIO: self.date_inic,
+            k_atributes.LIBRO_FECHA_FIN: self.date_fin,
+            k_atributes.LIBRO_VALORACION: self.rating,
+            k_atributes.LIBRO_OPINION: self.opinion
         }

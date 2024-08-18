@@ -1,0 +1,7 @@
+LIBRO_ID = 'id'
+LIBRO_TITULO = 'title'
+LIBRO_AUTOR = 'author'
+LIBRO_FECHA_INICIO = 'date_inic'
+LIBRO_FECHA_FIN = 'date_fin'
+LIBRO_VALORACION = 'rating'
+LIBRO_OPINION = 'opinion'

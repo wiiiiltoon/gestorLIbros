@@ -1,5 +1,6 @@
 import entities.Libro as Libro
-import constants.k_listados as k_listados
+import constants.k_atributes as k_atributes
+import constants.k_dictionary_keys as k_dictionary_keys
 
 class Libros:
 
@@ -28,8 +29,13 @@ class Libros:
     
     def update_libro(self, id_libro, atributos):
         libro = self.get_libro_by_id(id_libro)
-        for atr in k_listados.LISTADO_LIBRO_ATRIBUTOS:
-            if atr in atributos and atributos[atr] != '' and getattr(libro, atr) != atributos[atr]:
+        if libro is not None:
+            for atr in list(k_dictionary_keys.KEYS_LIBRO_ATRIBUTOS):
                 setattr(libro, atr, atributos[atr])
         return libro
-        
+    
+    def valorar_libro(self, id_libro, rating):
+        libro = self.get_libro_by_id(id_libro)
+        if libro is not None:
+            setattr(libro, k_atributes.LIBRO_VALORACION, rating)
+        return libro

@@ -1,7 +1,0 @@
-LIBRO_ID = 'id'
-LIBRO_TITULO = 'titulo'
-LIBRO_AUTOR = 'autor'
-LIBRO_FECHA_INICIO = 'fecha_inic'
-LIBRO_FECHA_FIN = 'fecha_fin'
-LIBRO_VALORACION = 'valoracion'
-LIBRO_OPINION = 'opinion'
